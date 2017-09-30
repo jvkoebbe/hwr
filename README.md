@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Homogenization Wavelet Reconstruction Method Repository
 
-You can use the [editor on GitHub](https://github.com/jvkoebbe/hwr/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository contains code and manuscripts of papers that define and implement a method referred to by this author as the
+Homogenization Wavelet Reconstruction (HWR) method. This work is ongoing and from time to time code and manuscripts will be
+added to this repository. The content involves the use of homogenization to condition wavelet bases for elliptic partial
+differential equations. The initial code has been written in Java mainly due to the fact that it is easy to get a Graphical
+User Interface (GUI) up and running. The author [Joe Koebbe](http://www.math.usu.edu/~koebbe) can be contacted about the
+various downloadables. However, since this is an ongoing area of work for the author, it may take some time to answer any
+questions about the method.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## A Brief Introduction to the HWR method
 
-### Markdown
+A few years ago the author decided that it might be better to have a fast transform method for the computation of homogenized
+coefficients for elliptic problems with spatially varying coefficients. After coming up with a brute force method for the
+computation of a macroscopic average from microscopic values on some domain an additional discovery was made. It turns out that
+the brute force transform could be rearranged so that a MultiResolution Analysis (MRA) could be defined. It turns out that the
+original method of homogenization could be couched in terms of a conditioned Haar MRA. By splitting the averaging into an
+arithmetic average added to a detail, the averaging formula can be split into an arithmetic average plus a detail that in turn
+produces wavelet coefficients for the MRA. In addition, the analysis could be used to reconstruct the solution of the elliptic
+differential equation on any scale.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jvkoebbe/hwr/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+More on this a bit later.... Need to add manuscripts and the latest codes I have written.....
